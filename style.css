@@ -48,7 +48,7 @@ header
     font-weight: 600;
 }
 
-main
+.conteiner-main
 {
     display: flex;
     align-items: center;
@@ -71,14 +71,14 @@ main
 .sub-titulo
 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 .titulo
 {
     color: aqua;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 6rem;
 
 }
 
@@ -93,21 +93,88 @@ nav ul li a:hover
     border-bottom: 2px solid aqua;
 }
 
+.conteiner-btn
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 1rem;
+}
 
-@media (max-width:900px)
+.btn
+{
+    border-radius: 100vmax;
+    width: 200px;
+    height: 65px;
+    background-color: white;
+    border: 5px solid black;
+    padding-block: 37px;
+}
+
+.btn:hover
+{
+    background-color: aqua;
+    transition: .4s;
+}
+.img-text
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.img-btn
+{
+    width: 60px;
+    height: 60px;
+}
+
+.intro
+{
+    line-height: 6.5em;
+}
+
+.btn-text
+{
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+@media (max-width:1050px)
 {
     .titulo
     {
-        font-size: 3.7rem;
+        font-size: 3.9rem;
     }
 
     .sub-titulo
     {
-        font-size: 2.6rem
+        font-size: 2.8rem
     }
 
     .conteiner-img
     {
-        width: 280px;
+        width: 310px;
+    }
+
+    .btn
+    {
+        width: 150px;
+        height: 55px;
+        padding: 30px;
+    }
+
+    .img-btn
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .intro
+    {
+        line-height: 4.5em;
     }
 }

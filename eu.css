@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.650), rgba(0, 0, 0, 0.740)), url(space.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header
+{
+    background-color: #282828;
+    padding: 1em;
+    margin-bottom: 10vh;
+}
+
+.text-header
+{
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar
+{
+    position: absolute;
+    top: 1.4rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.list-conteiner
+{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.1rem;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover
+{
+    border-bottom: 2px solid aqua;
+}
+
+.click:focus
+{
+    color: aqua;
+    
+}
+
+.conteiner-main
+{
+    padding: 15px;
+}
+
+.conteiner-apresentacao
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 150px;
+}
+
+.click
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+.click:hover
+{
+    background-color: aqua;
+
+}
+
+.texto
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.apresentacao-text
+{
+    width: 500px;
+    color: white;
+    font-size: 1.05em;
+    text-align: justify;
+}
+
+.img-a
+{
+    width: 100%; 
+    border-radius: 10px;
+}
+
+.conteiner-img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    padding-left: 20px;
+    border-left: 10px solid aqua;
+
+}
+
+.titulo-apresentacao
+{
+    font-weight: 500;
+    font-size: 3.5em;
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+.sub-texto
+{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cv-button
+{
+    margin-top: 25px;
+    display: block;
+    text-decoration: none;
+    font-weight:  600;
+    color: #282828;
+}
+
+.btn-conteiner
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    width: 200px;
+    align-items: center;
+    border-radius: 12px;
+    border: 3px solid black;
+    padding: 5px;
+
+}
+
+.navbar-close
+{
+    position: absolute;
+    top: 1.4rem;
+    right: 1.5rem;
+    display: none;
+    width: 30px;
+    height: 21px;
+    z-index: 1;
+}
+
+.btn-conteiner:hover
+{
+    background-color: aquamarine;
+}
+
+.mobile-menu
+{
+    display: none;
+}
+
+@media (max-width: 957px)
+{
+    .conteiner-img
+    {
+        display: none;
+    }
+
+    .conteiner-apresentacao
+    {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 720px){
+
+    .navbar
+    {
+        display: flex;
+    }
+
+    .list-conteiner
+    {
+        display: none;
+    }
+
+    .mobile-menu 
+    {
+        position: fixed;
+        background-color: #282828;  
+    }
+
+    .mobile-menu .list-conteiner
+    {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.mobile-menu.ativo
+{
+    display: flex;
+    margin-left: -1em;
+}
+
+.navbar.ativo
+{
+    display: none;
+}
+
+.navbar-close.ativo
+{
+    display: block;
+}
+
+header .ativo
+{
+    padding: 0px;
+}
+
+.texto
+{
+    align-items: center;
+}
+
+.apresentacao-text
+{
+    font-size: 15px;
+    text-align: center;
+    width: 400px;
+}
+
+}

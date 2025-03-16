@@ -20,8 +20,6 @@ header
 {
     display: flex;
     background-color: #282828;
-    align-items: center;
-    justify-content: space-around;
     padding: 1em;
     margin-bottom: 10vh;
 }
@@ -88,9 +86,41 @@ nav ul li a
     color: white;
 }
 
+.click
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+.click:hover
+{
+    background-color: aqua;
+
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+}
 nav ul li a:hover
 {
     border-bottom: 2px solid aqua;
+}
+
+.mobile-menu
+{
+    display: none;
+}
+
+.click:focus
+{
+    color: aqua;
+
 }
 
 .conteiner-btn
@@ -109,6 +139,8 @@ nav ul li a:hover
     background-color: white;
     border: 5px solid black;
     padding-block: 37px;
+    text-decoration: none;
+    color: black;
 }
 
 .btn:hover
@@ -134,6 +166,7 @@ nav ul li a:hover
 .intro
 {
     line-height: 6.5em;
+    text-align: justify;
 }
 
 .btn-text
@@ -141,6 +174,37 @@ nav ul li a:hover
     font-weight: 600;
     font-size: 1.5em;
     text-transform: uppercase;
+}
+
+.navbar
+{
+    position: absolute;
+    top: 1.4rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.navbar-close
+{
+    position: absolute;
+    top: 1.4rem;
+    right: 1.5rem;
+    display: none;
+    width: 30px;
+    height: 21px;
+    z-index: 1;
+}
+
+.bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 @media (max-width:1050px)
@@ -177,4 +241,79 @@ nav ul li a:hover
     {
         line-height: 4.5em;
     }
+}
+
+@media (max-width: 730px)
+{
+    .navbar
+    {
+        display: flex;
+        z-index: 1;
+    }
+
+    .list-conteiner
+    {
+        display: none;
+    }
+
+    header
+    {
+        justify-content: center;
+    }
+
+    .conteiner-img
+    {
+        display: none;
+    }
+
+    .intro h1,h2
+    {
+        text-align: justify;
+    }
+
+    .conteiner-btn
+    {
+        margin-top: 3em;
+    }
+
+    .conteiner-main
+    {
+        justify-content: center;
+    }
+
+    .mobile-menu 
+{
+    position: fixed;
+    background-color: #282828;
+    
+    
+}
+
+.mobile-menu .list-conteiner
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+   
+    
+}
+
+.mobile-menu.ativo
+{
+    display: flex;
+}
+
+.navbar.ativo
+{
+    display: none;
+}
+
+.navbar-close.ativo
+{
+    display: block;
+}
+
 }

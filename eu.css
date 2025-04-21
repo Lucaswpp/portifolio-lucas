@@ -283,3 +283,30 @@ header .ativo
 }
 
 }
+
+@media (max-width: 450px)
+{
+    .apresentacao-text
+    {
+        position: relative;
+        width: 370px;
+    }
+
+    .texto
+    {
+        position: absolute;
+        font-size: 10px;
+
+    }
+
+    header
+    {
+        margin-bottom: 30vh;
+    }
+
+    .conteiner-main
+    {
+        position: relative;
+        z-index: -1;
+    }
+}

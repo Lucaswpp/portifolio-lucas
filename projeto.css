@@ -214,17 +214,30 @@ header .ativo
     
 }
 
-#spec
+#pic
 {
     width: 400px;
     height: 250px;
 }
 
-#spec img
+#pic img
 {
     width: 100%;
     height: 100%;
 }
+
+#login
+{
+    width: 400px;
+    height: 250px;
+}
+
+#login img
+{
+    width: 100%;
+    height: 100%;
+}
+
 
 .contet-projeto
 {
@@ -295,4 +308,40 @@ header .ativo
     }
 
 
+}
+
+@media(max-width: 450px)
+{
+    .content-main .descrip
+    {
+        width: 350px;
+    } 
+
+    #pic
+{
+    width: 300px;
+    height: 180px;
+}
+
+#pic img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#login
+{
+    width: 300px;
+    height: 180px;
+}
+
+#login img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+   
 }

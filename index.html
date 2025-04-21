@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width=initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="eu.css" />
     <script src="main.js" defer></script>
-    <title>My portifolio</title>
+    <title>Quem sou eu?</title>
 </head>
 <body>
     <header>
-
         <nav class="conteiner-nav">
-
             <p class="text-header"><span style="color: aqua;">L</span>ucas</p>
 
-            <a href = "#" class="navbar">
+            <a href="#" class="navbar">
                 <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar"></span> 
                 <span class="bar"></span>
             </a>
 
             <a href="#" class="navbar-close">
-                <img src="close.png">
+                <img src="close.png" alt="Fechar menu">
             </a>
 
             <ul class="list-conteiner">
-                <li><a href="./index.html">Home</a>
-                <li><a href="./projetos.html">Projetos</a>
-                <li><a href="./tech.html">Tecnologias</a>
-                <li><a href="./eu.html">Sobre mim</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="tech.html">Tecnologias</a></li>
+                <li><a href="./eu.html">Sobre mim</a></li>
             </ul>
-
         </nav>
 
         <div class="mobile-menu">
             <ul class="list-conteiner">
-                <li><a class="click" href="index.html">Home</a>
-                <li><a class="click" href="projetos.html">Projetos</a>
-                <li><a class="click" href="tech.html">Tecnologias</a>
-                <li><a class="click" href="./eu.html">Sobre mim</a>
+                <li><a class="click" href="index.html">Home</a></li>
+                <li><a class="click" href="projetos.html">Projetos</a></li>
+                <li><a class="click" href="tech.html">Tecnologias</a></li>
+                <li><a class="click" href="./eu.html">Sobre mim</a></li>
             </ul>
         </div>
-
     </header>
 
-    
-
-    <main>
-        <div class="conteiner-main">
-
-            <div class="intro">
-                <h2 class="sub-titulo">OLÁ, EU SOU</h2>
-                <h1 class="titulo">JOSÉ LUCAS</h1>
-                <h2 class="sub-titulo">DEV BACKEND</h2>
-
-                <div class="conteiner-btn">
-                    <a class="btn" href="https://github.com/Lucaswpp" target="_blank">
-                        <div class="img-text">
-                            <img class="img-btn" src="github.png">
-                            <p class="btn-text">github</p>
-                        </div>
-                    </a>
-        
-                    <a class="btn" href="https://www.linkedin.com/in/jos%C3%A9-cardoso-968976253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                        <div class="img-text">
-                            <img class="img-btn" src="linkedin.png">
-                            <p class="btn-text">linkedin</p>
-                        </div>
-                    <a>
-                </div>
-            </div>
-
+    <main class="conteiner-main">
+        <div class="conteiner-apresentacao">
             <div class="conteiner-img">
-                <img src="code.png">
+                <img class="img-a" src="./Lucas.jpeg" alt="Foto de Lucas">
             </div>
 
+            <div class="texto">
+                <h1 class="titulo-apresentacao">QUEM SOU EU ?</h1>
+                <h3 class="sub-texto">Cabo de Santo Agostinho, Pernambuco</h3>
+                <p class="apresentacao-text">
+                    Meu nome é José Lucas Soares Cardoso, tenho 20 anos e sou estudante de Ciência da Computação. 
+                    Busco minha primeira oportunidade de trabalho na área de desenvolvimento back-end, onde posso aplicar e aprimorar meus conhecimentos. 
+                    Tenho grande interesse em desenvolvimento Full-stack e redes de computadores, áreas que estudo constantemente para expandir minhas habilidades.
+                </p>
+                <a class="cv-button" download="curriculo_jsl.pdf" href="curriculo_jsl.pdf" target="_blank">
+                    <div class="btn-conteiner">
+                        <img src="./curriculo.png" alt="Ícone de currículo">
+                        <p class="text-btn">Baixar o CV</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
 </body>

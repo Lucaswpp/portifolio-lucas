@@ -127,6 +127,7 @@ nav ul li a:hover
 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     margin-top: 1rem;
 }
@@ -165,9 +166,14 @@ nav ul li a:hover
 
 .intro
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 6.5em;
-    text-align: justify;
+    flex-direction: column;
 }
+
+
 
 .btn-text
 {
@@ -316,4 +322,32 @@ nav ul li a:hover
     display: block;
 }
 
+}
+
+@media (max-width: 450px)
+{
+    .intro
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .conteiner-btn
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .conteiner-btn .btn
+    {
+        width: 250px;
+    }
+
+    header
+    {
+        margin-bottom: 25px;
+    }
 }

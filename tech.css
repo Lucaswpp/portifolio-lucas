@@ -269,3 +269,25 @@ header .ativo
         height: 220vh;
     }
 }
+
+@media(max-width: 450px)
+{
+    .card-content
+    {
+        width: 120px;
+        height: 160px;
+    }
+
+    .card-content:hover
+    {
+        .content-img
+        {
+            transition: 400ms;
+        }
+    
+        width: 130px;
+        height: 180px;
+        transition: 300ms;
+    
+    }
+}
